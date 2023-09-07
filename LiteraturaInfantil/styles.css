@@ -123,3 +123,33 @@ footer {
     color: #fff;
 }
 
+/* CSS para dispositivos móveis */
+@media (max-width: 768px) {
+    .books-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .book {
+        width: calc(33.33% - 20px); /* Defina o tamanho de cada livro (ajuste conforme necessário) */
+        margin-right: 20px; /* Espaçamento entre os livros (ajuste conforme necessário) */
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos para o botão "Carregar Mais" */
+#loadMoreBtn {
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão (ajuste conforme necessário) */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Altere o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+/* Estilos quando o cursor está sobre o botão */
+#loadMoreBtn:hover {
+    background-color: #0056b3; /* Cor de fundo do botão quando o cursor está sobre ele */
+}
