@@ -136,18 +136,3 @@ footer {
     }
 }
 
-/* Estilos para o botão "Carregar Mais" */
-#loadMoreBtn {
-    background-color: #007BFF; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão (ajuste conforme necessário) */
-    border: none; /* Remova a borda do botão */
-    border-radius: 5px; /* Borda arredondada */
-    cursor: pointer; /* Altere o cursor para indicar que é clicável */
-    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
-}
-
-/* Estilos quando o cursor está sobre o botão */
-#loadMoreBtn:hover {
-    background-color: #0056b3; /* Cor de fundo do botão quando o cursor está sobre ele */
-}
