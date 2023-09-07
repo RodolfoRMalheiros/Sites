@@ -126,14 +126,12 @@ footer {
 /* CSS para dispositivos móveis */
 @media (max-width: 768px) {
     .books-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: block; /* Altere a exibição para um abaixo do outro */
     }
 
     .book {
-        width: calc(33.33% - 20px); /* Defina o tamanho de cada livro (ajuste conforme necessário) */
-        margin-right: 20px; /* Espaçamento entre os livros (ajuste conforme necessário) */
+        width: 100%; /* Defina a largura como 100% para ocupar a largura total */
+        margin-right: 0; /* Remova o espaçamento à direita */
         margin-bottom: 20px;
     }
 }
