@@ -29,3 +29,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona o botão de volta ao topo
+    var btnTopo = document.getElementById("btnTopo");
+
+    // Adiciona um evento de clique ao botão
+    btnTopo.addEventListener("click", function () {
+        // Faz a animação de scroll suave para o topo da página
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    // Mostra ou oculta o botão dependendo da posição do usuário na página
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+            btnTopo.style.display = "block";
+        } else {
+            btnTopo.style.display = "none";
+        }
+    });
+});

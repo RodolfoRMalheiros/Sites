@@ -1,7 +1,7 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Libre Baskerville", serif;
     margin: 0;
     padding: 0;
     background-color: #031634; /* Azul anil */
@@ -9,19 +9,39 @@ body {
     overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
+.titulo {
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 12px; /* Tamanho da fonte para a primeira e terceira linhas */
+    line-height: 1.0; /* Espaçamento entre as linhas */
+    color: #e8ddcb;
+    letter-spacing: 2px;
+}
+
+.titulo .destaque {
+    text-align: center;
+    display:block;
+    font-size:44px; /* Tamanho da fonte para a segunda linha (4 vezes maior) */
+    font-style: italic; /* Texto em itálico para a segunda linha */
+    color: #e8ddcb;
+    letter-spacing: 5px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 header {
-    background-color: #031634;
+    padding-top: 30px;
     text-align: center;
-    padding: 15px;
-    font-family: "Georgia", serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 12px; /* Ajuste o tamanho da fonte conforme necessário */
-    color: #fff; /* Cor do texto */
+    color: #4d4d4d; /* Cor do texto */
     overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 
     
 }
 
+*
 header h1 {
     font-size: 30px;
     color:#e8ddcb;
@@ -34,20 +54,60 @@ header p {
     overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
-.botao {
-    /* Estilização básica do botão */
+
+.featured-books {
+    
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px 0px;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+.featured-books > a {
     display: inline-block;
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 20px;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 30px 0px;
+    font-size: 30px;
     background-color: #036564; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
+    color: #031634; /* Cor do texto */
+   
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    text-shadow: 2px 2px 2px rgb(255, 255, 255); /* Sombra de texto */
+    font-family: "Arial", sans-serif; /* Escolha uma fonte legível */
+
     border: none; /* Remove a borda */
-    border-radius: 4px; /* Borda arredondada */
     cursor: pointer; /* Cursor de mão ao passar o mouse */
     text-decoration: none; /* Remove sublinhado do texto */
     transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo */
 }
+
+.botao1 {
+    background-image: url('imagens_botao/1.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajuste o tamanho da imagem para cobrir todo o botão */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
+}
+
+.botao2 {
+    background-image: url('imagens_botao/2.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajuste o tamanho da imagem para cobrir todo o botão */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
+}
+
+.botao3 {
+    background-image: url('imagens_botao/3.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajuste o tamanho da imagem para cobrir todo o botão */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
+}
+
+.botao4 {
+    background-image: url('imagens_botao/4.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajuste o tamanho da imagem para cobrir todo o botão */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
+}
+
+
+
 
 /* Estilização do botão quando o mouse passa por cima */
 .botao:hover {
@@ -59,20 +119,24 @@ header p {
     text-align: center;
     font-size: 14px;
     color: #ffffff;
+    margin-bottom: 0;
+    font-family: "Arial", sans-serif;
     overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
-.featured-books {
+
+.featured-books-2 {
     text-align: center;
     margin-top: 0px;
     overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .featured-books h2 {
-    font-size: 28px;
-    padding: 10px;
-    margin: 10px;
-    color: #cdb380;
+    font-size: 14px;
+    padding: 5px;,
+    margin-top: 12px;
+    font-family: "Arial", sans-serif;
+    color:  #0de7f6;
     overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
@@ -89,7 +153,7 @@ header p {
 .book {
     padding-top: 10px ;
     margin: 0px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
@@ -115,50 +179,22 @@ header p {
     overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
-.newsletter {
-    background-color: #033649; /* Azul anil */
-    background-color: ;
+.botao-topo {
     text-align: center;
-    padding: 40px;
-    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
-}
-
-.newsletter h2 {
-    font-size: 28px;
-    color: #fffdfd;
-    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
-}
-
-.newsletter p {
-    font-size: 18px;
-    color: #ffffff;
-    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
-}
-
-.newsletter input[type="email"] {
-    width: 100%;
+    font-size: 14px ;
     padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    
-}
-
-.newsletter button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #0de7f6;
+    color: #031634;
+    display: inline-block;
+    margin: 0 auto; /* Centraliza horizontalmente o botão */
+    margin-bottom: 6px;
+    border-radius: 15px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #033649;
     color: #fff;
     overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
