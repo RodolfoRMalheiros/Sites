@@ -4,97 +4,135 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #00008b; /* Azul anil */
+    background-color: #031634; /* Azul anil */
     color: #ffffff;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
 header {
-    background-color: #060c31;
+    background-color: #031634;
     text-align: center;
-    padding: 30px;
+    padding: 15px;
     font-family: "Georgia", serif;
     font-size: 12px; /* Ajuste o tamanho da fonte conforme necessário */
     color: #fff; /* Cor do texto */
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+
+    
 }
 
 header h1 {
-    font-size: 36px;
-    color: #ffffff;
+    font-size: 30px;
+    color:#e8ddcb;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 header p {
     font-size: 18px;
     color: #ffffff;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
+
+.botao {
+    /* Estilização básica do botão */
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #036564; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado do texto */
+    transition: background-color 0.3s ease; /* Efeito de transição na cor de fundo */
+}
+
+/* Estilização do botão quando o mouse passa por cima */
+.botao:hover {
+    background-color: #0056b3; /* Cor de fundo alterada */
+}
+
 
 .clique {
     text-align: center;
     font-size: 14px;
     color: #ffffff;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .featured-books {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0px;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .featured-books h2 {
     font-size: 28px;
-    color: #09dada;
+    padding: 10px;
+    margin: 10px;
+    color: #cdb380;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
-.book-container {
+.books-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px; /* Espaço entre as imagens */
     margin-top: 40px; /* Maior margem superior para espaço na borda da página */
-    padding: 0 20px; /* Espaço interno nas laterais */
+    padding: 10 10; /* Espaço interno nas laterais */
+    width: auto;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .book {
-    padding: 20px;
+    padding-top: 10px ;
+    margin: 0px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
 
 .book img {
     max-width: 150px; /* Reduz o tamanho das imagens */
     display: block;
     margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .book h3 {
     font-size: 24px;
     color: #333;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .book p {
     font-size: 16px;
     color: #666;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .newsletter {
-    background-color: #00008b; /* Azul anil */
+    background-color: #033649; /* Azul anil */
     background-color: ;
     text-align: center;
     padding: 40px;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .newsletter h2 {
     font-size: 28px;
     color: #fffdfd;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .newsletter p {
     font-size: 18px;
     color: #ffffff;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 .newsletter input[type="email"] {
@@ -103,6 +141,7 @@ header p {
     margin-top: 10px;
     border: none;
     border-radius: 5px;
+    
 }
 
 .newsletter button {
@@ -121,6 +160,7 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
 }
 
 /* CSS para dispositivos móveis */
